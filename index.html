@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DINE IN</title>
+
+    <style>
+
+        /* GENERAL */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #17120e;
+            color: white;
+        }
+
+        /* NAVBAR */
+
+        header {
+            height: 95px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 4%;
+            background-color: #000000;
+            border-bottom: 1px solid #a98236;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 45px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo span {
+            font-size: 55px;
+            color: #ffc629;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+      
+
+        .book-btn {
+            background-color: #ffc629;
+            color: black;
+            padding: 16px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+       
+
+        .main {
+            height: 420px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+
+            background-image:
+                linear-gradient(
+                    to right,
+                    rgba(0, 0, 0, 0.80),
+                    rgba(0, 0, 0, 0.20)
+                ),
+                url("restarunt.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main-content {
+            width: 60%;
+        }
+
+        .welcome {
+            color: #ffc629;
+            font-size: 48px;
+            font-style: italic;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 85px;
+            line-height: 1.05;
+            margin: 5px 0;
+        }
+
+        .hero h1 span {
+            color: #ffc629;
+        }
+
+        .hero p {
+            color: white;
+            font-size: 21px;
+            margin: 15px 0 25px;
+        }
+
+        .explore-btn {
+            display: inline-block;
+            background-color: #ffc629;
+            color: black;
+            padding: 16px 35px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+
+        .features {
+            min-height: 120px;
+            width: 100%;
+            background-color: #fff2e6;
+            color: #17120e;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 4%;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+    
+
+        .feature h3 {
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+
+        .feature p {
+            font-size: 17px;
+            color: #5c5148;
+        }
+        
+
+        .menu {
+            padding: 25px 5% 35px;
+            background-color: #191411;
+            text-align: center;
+        }
+
+        .section-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 25px;
+        }
+
+       
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .menu-card {
+            overflow: hidden;
+            border: 1px solid #ffc629;
+            border-radius: 16px;
+            transition: 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 5px 20px rgba(255, 198, 41, 0.3);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            display: block;
+        }
+
+        
+        
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <div class="logo">
+            <span>♨</span>
+            DINE IN
+        </div>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="book-btn">
+            🍴 Book a Table
+        </a>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="main" id="home">
+
+        <div class="main-content">
+
+            <div class="welcome">
+                Welcome to DINE IN 
+            </div>
+
+            <h1>
+                Good Food<br>
+                <span>Good Mood</span>
+            </h1>
+
+            <p>
+                Delicious food. Great ambiance.
+                Unforgettable experience.
+            </p>
+
+            <a href="#menu" class="explore-btn">
+                Explore Our Menu &nbsp; →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES SECTION -->
+
+    <section class="features" id="about">
+
+        <div class="feature">
+
+            <div class="feature-icon">♨</div>
+
+            <div>
+                <h3>Fresh Ingredients</h3>
+                <p>Always fresh & healthy</p>
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">🍴</div>
+
+            <div>
+                <h3>Expert Chefs</h3>
+                <p>Culinary masters at work</p>
+            </div>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">☺</div>
+
+            <div>
+                <h3>Great Ambience</h3>
+                <p>Perfect for every occasion</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU SECTION -->
+
+    <section class="menu" id="menu">
+
+        <div class="section-title">
+
+            <div class="line"></div>
+
+            <h2>Our <span>Menu</span></h2>
+
+            <div class="line"></div>
+
+        </div>
+
+
+        <div class="menu-container" id="gallery">
+
+            <div class="menu-card">
+
+                <img src="pizza.jpg" alt="Pizza">
+
+                <h3>Pizza</h3>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="burger.jpg" alt="Burger">
+
+                <h3>Burger</h3>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="pasta.jpg" alt="Pasta">
+
+                <h3>Pasta</h3>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="dessert.jpg" alt="Desserts">
+
+                <h3>Desserts</h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <p>
+            © 2026 DINE IN Restaurant. All Rights Reserved.
+        </p>
+
+
+    </footer>
+
+</body>
+
+</html>
